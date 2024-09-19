@@ -1,8 +1,8 @@
 class MobilPhone:
-    def __init__(self, brand, model, ram, uloziste, barva):
+    def __init__(self, brand, model, software, uloziste, barva):
         self.brand = brand
         self.model = model
-        self.ram = ram
+        self.software = software
         self.uloziste = uloziste
         self.barva = barva
 
@@ -12,11 +12,11 @@ class MobilPhone:
     def poslat_zpravu(self, prijemce, zprava):
         print(f'Posílám zprávu {zprava} na číslo {prijemce}')
 
-phone1 = MobilPhone('Apple', 'iPhone 13 mini', '4 GB', '256GB', 'Červená')
+phone1 = MobilPhone('Apple', 'iPhone 13 mini', 'iOS', '256GB', 'Červená')
 
-phone2 = MobilPhone('Samsung', 'Galaxy S23', '8 GB', '256GB', 'Zelená')
+phone2 = MobilPhone('Samsung', 'Galaxy S23', 'Android', '256GB', 'Zelená')
 
-phone3 = MobilPhone('Google', 'Pixel 9 Pro', '16 GB', '128GB', 'Šedá')
+phone3 = MobilPhone('Google', 'Pixel 9 Pro', 'Android', '128GB', 'Šedá')
 
 phone1.zavolat("123098567")
 phone1.poslat_zpravu("999888777", "Ahoj, jak se máš?")
