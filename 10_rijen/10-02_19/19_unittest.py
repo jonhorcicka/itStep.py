@@ -1,6 +1,6 @@
 import unittest
 
-def faktorial(self):
+def faktorial(cislo):
     pass
 
 class TestFaktorial(unittest.TestCase):
