@@ -1,0 +1,39 @@
+A)
+INSERT INTO authors (id, first_name,  last_name, country )
+VALUES (1, 'Daniel', 'Goleman', 'USA'); 
+
+INSERT INTO books (id, tittle, author_id, published_year, price )
+VALUES (1, 'Emoční inteligence', 1, 2020, 349); 
+
+
+
+INSERT INTO authors (id, first_name,  last_name, country )
+VALUES (2, 'Cal', 'Newpot', 'USA');
+
+INSERT INTO books (id, tittle, author_id, published_year, price )
+VALUES (2, 'Digitální minimalismus', 2, 2016, 249); 
+
+INSERT INTO books (id, tittle, author_id, published_year, price )
+VALUES (3, 'Minimalismus', 2, 2009, 399); 
+
+
+INSERT INTO authors (id, first_name,  last_name, country )
+VALUES (3, 'Ali', 'Abdaal', 'GB');
+
+INSERT INTO books (id, tittle, author_id, published_year, price )
+VALUES (4, 'Pohodová produktivita', 3, 2024, 299); 
+
+INSERT INTO books (id, tittle, author_id, published_year, price )
+VALUES (5, 'Produktivita', 3, 2019, 149); 
+
+B)
+SELECT * FROM books
+WHERE published_year > 2010;
+
+C)
+SELECT * FROM books
+ORDER BY price DESC
+
+D)
+SELECT a.tittle, b.first_name, b.last_name FROM books a
+LEFT JOIN authors b ON  b.id = a.author_id
