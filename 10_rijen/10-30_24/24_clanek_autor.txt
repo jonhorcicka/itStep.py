@@ -1,10 +1,10 @@
-author (varchar)
-authorId (pk, int)
+autor (varchar)
+autorId (pk, int)
 clanek (varchar)
 clanekId (pk, int)
 
 Tab_1
-    authorId      Autor       
+    autorId      Autor       
         1         Franta    
         2         Karel          
         3         Zuzana         
@@ -25,13 +25,13 @@ Tab_2
 
 Vztahová tabulka
 Tab_3 - 1:1
-    authorId   clanekId     
+    autorId   clanekId     
         1          1
         2          2
         3          3
 
 Tab_3 - 1:n
-    authorId   clanekId     
+    autorId   clanekId     
         1          4
         1          5
         1          6
@@ -39,7 +39,7 @@ Tab_3 - 1:n
         2          8
 
 Tab_3 - n:m
-    authorId   clanekId     
+    autorId   clanekId     
         1          9
         2          9
         2          11
@@ -47,23 +47,23 @@ Tab_3 - n:m
         3          11
 
 1:1
-    id      Autor       članek
-    1       Franta         A
-    2       Karel          B
-    3       Zuzana         C
+    autorId      Autor       članek
+        1       Franta         A
+        2       Karel          B
+        3       Zuzana         C
 
 1:n
-    id      Autor       članek
-    1       Franta         D
-    1       Franta         E
-    1       Franta         F
-    2       Karel          G
-    2       Karel          H
+    autorId      Autor       članek
+        1       Franta         D
+        1       Franta         E
+        1       Franta         F
+        2       Karel          G
+        2       Karel          H
 
 n:m
-    id      Autor       članek
-    1       Franta         M
-    2       Karel          M
-    2       Karel          P
-    1       Franta         Q
-    3       Zuzana         P
+    autorId      Autor       članek
+        1       Franta         M
+        2       Karel          M
+        2       Karel          P
+        1       Franta         Q
+        3       Zuzana         P
